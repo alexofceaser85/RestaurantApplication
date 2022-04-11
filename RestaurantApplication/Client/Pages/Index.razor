@@ -1,15 +1,21 @@
 ﻿@page "/"
 @using RestaurantApplication.Client.Settings.Header
 
-<Header Title="@HeaderTextConstants.WelcomeTitle" Content="@HeaderTextConstants.WelcomeContent"></Header>
-<div id="loginContainer">
-    <div id="usernameContainer">
-        <h4>Username</h4>
-        <input id="usernameInput" class="inputComponent"/>
-    </div>
-    <div id="passwordContainer">
-        <h4>Password</h4>
-        <input id="passwordInput" class="inputComponent"/>
+<Header Title="@HeaderTextConstants.LoginTitle" Content="@HeaderTextConstants.LoginContent"></Header>
+<div id="loginPageContent">
+    <div id="loginContainer" class="accountInputContainer">
+        <div id="usernameContainer">
+            <h4>Username</h4>
+            <input id="usernameInput" class="inputComponent"/>
+        </div>
+        <div id="passwordContainer">
+            <h4>Password</h4>
+            <input id="passwordInput" class="inputComponent"/>
+        </div>
+        <div id="loginComponentButtons">
+            <button id="loginButton">Login</button>
+            <button id="createAccountButton">Create Account</button>
+        </div>
     </div>
 </div>
 
