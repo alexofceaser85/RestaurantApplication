@@ -1,7 +1,19 @@
 ﻿@page "/"
+@using RestaurantApplication.Client.Settings.Header
 
-<h1>Hello, world!</h1>
+<Header Title="@HeaderTextConstants.WelcomeTitle" Content="@HeaderTextConstants.WelcomeContent"></Header>
+<div id="loginContainer">
+    <div id="usernameContainer">
+        <h4>Username</h4>
+        <input id="usernameInput" class="inputComponent"/>
+    </div>
+    <div id="passwordContainer">
+        <h4>Password</h4>
+        <input id="passwordInput" class="inputComponent"/>
+    </div>
+</div>
 
-Welcome to your new app.
+@code
+{
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+}

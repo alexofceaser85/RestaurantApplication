@@ -1,0 +1,13 @@
+﻿@using System.ComponentModel.DataAnnotations
+<header id="mainHeader" arg>
+    <h1>@Title</h1>
+    <h2>@Content</h2>
+</header>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Content { get; set; }
+}
