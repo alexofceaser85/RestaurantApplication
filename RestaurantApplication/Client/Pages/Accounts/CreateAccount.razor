@@ -1,23 +1,24 @@
 ﻿@page "/createAccount"
 @using RestaurantApplication.Client.Settings.Header
+@inject NavigationManager navigationManager;
 
 <Header Title="@HeaderTextConstants.CreateAccountTitle"></Header>
 <div class="accountPage" id="createAccountPage">
     <div class="usernameContainer">
         <h4>Username</h4>
-        <input class="inputComponent"/>
+        <input class="inputComponent" />
     </div>
     <div class="passwordContainer">
         <h4>Enter Password</h4>
-        <input class="inputComponent"/>
+        <input class="inputComponent" />
     </div>
     <div class="passwordContainer">
         <h4>Enter Password Again</h4>
-        <input class="inputComponent"/>
+        <input class="inputComponent" />
     </div>
     <div class="accountButtonContainer">
-        <button class="accountButton, bottomLeftBorderRadius">Back</button>
-        <button class="accountButton, bottomRightBorderRadius">Create Account</button>
+        <button class="accountButton, bottomLeftBorderRadius" @onclick="@(e => { navigationManager.NavigateTo("/"); })">Back</button>
+        <button class="accountButton, bottomRightBorderRadius" @onclick="@(e => { navigationManager.NavigateTo("/"); })">Create Account</button>
     </div>
 </div>
 
